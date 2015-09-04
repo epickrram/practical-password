@@ -79,6 +79,9 @@ public final class IndicatorComponent
             case 7:
                 gfx.fillRect(xOffset + 2 * HGAP, 0, HGAP, SHAPE_SIZE);
                 break;
+            default:
+                throw new RuntimeException("This is not the case you're looking for");
+
         }
     }
 

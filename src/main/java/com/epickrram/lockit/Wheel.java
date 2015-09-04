@@ -17,7 +17,6 @@ package com.epickrram.lockit;
 //////////////////////////////////////////////////////////////////////////////////
 
 
-import java.io.Console;
 import java.util.Arrays;
 import java.util.function.Consumer;
 
@@ -34,8 +33,6 @@ public final class Wheel
     static final int TOTAL_SPOKES = MNEMONIC_CHARS.length;
     static final int DEPTH = 4;
     static final int CHARS_PER_SPOKE_ENTRY = 4;
-
-    public static final int CHARS_PER_KEY = DEPTH * CHARS_PER_SPOKE_ENTRY;
 
     private final Spoke[] spokes;
     private final ViewPort viewPort;
