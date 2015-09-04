@@ -1,18 +1,14 @@
 package com.epickrram.lockit.gui;
 
 import com.epickrram.lockit.KeyGenerator;
-import com.epickrram.lockit.NoOpClipboardOwner;
 import com.epickrram.lockit.Wheel;
 import javafx.application.Application;
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
-import javafx.scene.control.ListView;
 import javafx.scene.control.PasswordField;
 import javafx.scene.layout.GridPane;
 import javafx.scene.paint.Color;
@@ -25,8 +21,6 @@ import java.awt.*;
 import java.awt.datatransfer.Clipboard;
 import java.awt.datatransfer.StringSelection;
 import java.nio.charset.Charset;
-import java.util.ArrayList;
-import java.util.List;
 
 public final class Lockit extends Application
 {
