@@ -22,8 +22,8 @@ defaultTasks 'checkstyleMain', 'checkstyleTest', 'build'
 version = new Version(major: 0, revision: 1)
 
 ext {
-    fullName = 'lockit'
-    fullDescription = 'lockit'
+    fullName = 'practical-password'
+    fullDescription = 'practical-password'
     teamName = ''
     siteUrl = 'http://epickrram.com'
     sourceUrl = ''
