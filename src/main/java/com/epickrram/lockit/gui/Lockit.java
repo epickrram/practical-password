@@ -107,23 +107,15 @@ public final class Lockit extends Application
 
     private GridPane createUnlockedDisplay()
     {
-        final List<Integer> indicies = new ArrayList<>();
-        for(int i = 0; i < Wheel.CHARS_PER_KEY; i++)
-        {
-            indicies.add(i + 1);
-        }
-        final ObservableList<Integer> indicesList = FXCollections.observableArrayList(indicies);
-        final ListView<Integer> listView = new ListView<>(indicesList);
         final GridPane unlockedGrid = new GridPane();
         unlockedGrid.setAlignment(Pos.CENTER);
         unlockedGrid.setHgap(10);
         unlockedGrid.setVgap(10);
         unlockedGrid.setPadding(new Insets(25, 25, 25, 25));
-        unlockedGrid.add(scenetitle, 0, 0, 4, 1);
+        unlockedGrid.add(scenetitle, 0, 0, 3, 1);
         unlockedGrid.add(setFont(mnemonicLabel), 0, 1);
         unlockedGrid.add(setFont(mnemonicField), 1, 1);
-        unlockedGrid.add(listView, 2, 1);
-        unlockedGrid.add(ic3.getCanvas(), 3, 1);
+        unlockedGrid.add(ic3.getCanvas(), 2, 1);
         unlockedGrid.add(setFont(info), 1, 2, 2, 1);
         return unlockedGrid;
     }
